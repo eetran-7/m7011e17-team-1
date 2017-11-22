@@ -1,7 +1,5 @@
-# m7011e17-team-1
-m7011e17-team-1 created by GitHub Classroom
-Name: CodeBasics
-Idea: 
+M7011E - CodeBasics
+ 
 Idea is in simplicity that system would be a video database 
 (youtube-videos, links to other videos, own videos, etc.) 
 where users can watch basic programming videos and by that 
@@ -14,3 +12,5 @@ gamification elements as, for example, level of proficiency.
 That level would go up at least in order to how many videos you 
 have watched. Users can also recommend videos to be added on the 
 system. This recommendation list is then handled by administrators.
+
+Website: https://cloud-75.skelabb.ltu.se (the site is under continuous development)
