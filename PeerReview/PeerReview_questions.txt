@@ -1,0 +1,11 @@
+Opponent questions to peer-team:
+
+1. Have you faced any major challenges? How did you solve them?
+
+2. How do you ensure that your login form and process is secure?
+
+3. What is the API you are going to develop?
+
+4. Can you motivate me the choice of your back-end architecture?
+
+5. Do you have sensitive user information? If yes, what operations you do to have it safe?
