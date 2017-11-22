@@ -1,0 +1,76 @@
+body {
+    background: rgba(85, 155, 185, 1); /* For browsers that do not support gradients */
+    font-family: Verdana, Helvetica, sans-serif;
+    /* background: -webkit-linear-gradient(rgba(39, 54, 169, 0.9), rgba(118, 197, 233, 0.3)); /* For Safari 5.1 to 6.0 */ */
+    /* background: -o-linear-gradient(rgba(39, 54, 169, 0.9), rgba(118, 197, 233, 0.3)); /* For Opera 11.1 to 12.0 */ */
+    /* background: -moz-linear-gradient(rgba(39, 54, 169, 0.9), rgba(118, 197, 233, 0.3)); /* For Firefox 3.6 to 15 */ */
+    /* background: linear-gradient(rgba(39, 54, 169, 0.9), rgba(118, 197, 233, 0.3)); /* Standard syntax (must be last) */ */
+}
+
+div.header {
+    border: 1px solid black;
+    height: 100px;
+    width: 100%;
+    margin: 5px 0;
+}
+
+div.header h1 {
+    display: inline-block;
+}
+
+div.header a {
+    float: right;
+}
+
+div.nav {
+    border: 1px solid black;
+    height: 50px;
+    width: 80%;
+    margin: 5px auto;
+    overflow: hidden;
+    display: block;
+    line-height: 50px;
+    background-color: rgba(255, 255, 0, 1);
+}
+
+div.nav a {
+    border: 1px solid black;
+    cursor: pointer;
+    float: left;
+    transition: 0.3;
+    margin: 0 0;
+    padding: 0 0;
+    background-color: rgba(255, 0, 255, 1);
+}
+
+div nav a.active {
+    background-color: rgba(255, 255, 255, 1);    
+}
+
+div.content {
+    border: 1px solid black;
+    height: 200px;
+    width: 80%;
+    margin: 5px auto;
+}
+
+/* Footer style */
+div.footer {
+    margin: 15px 0;
+    border-top: 1px solid rgba(185, 185, 185, 1);
+}
+div.footer p {
+    text-align: center;
+}
+
+
+
+/* Change styles for login on screens between 300px and 500px */
+@media screen and (max-width: 500px) {
+
+}
+
+/* Change styles for login on screens max 300px */
+@media screen and (max-width: 300px) {
+  
+}

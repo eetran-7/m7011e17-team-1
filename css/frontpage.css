@@ -1,0 +1,674 @@
+/* Background and basic font style */
+body {
+    font-family: Verdana, Helvetica, sans-serif;
+    background-image: url("../pictures/bg1.jpg");
+    background-size: 100% 100%;
+    margin: 0 0;
+    padding: 0 0;
+    /* background: -webkit-linear-gradient(rgba(39, 54, 169, 0.9), rgba(118, 197, 233, 0.3)); /* For Safari 5.1 to 6.0 */ */
+    /* background: -o-linear-gradient(rgba(39, 54, 169, 0.9), rgba(118, 197, 233, 0.3)); /* For Opera 11.1 to 12.0 */ */
+    /* background: -moz-linear-gradient(rgba(39, 54, 169, 0.9), rgba(118, 197, 233, 0.3)); /* For Firefox 3.6 to 15 */ */
+    /* background: linear-gradient(rgba(39, 54, 169, 0.9), rgba(118, 197, 233, 0.3)); /* Standard syntax (must be last) */ */
+}
+
+/* Page heading style */
+h1 {
+	text-align: center;
+	letter-spacing: 3px;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 2.5em;
+    margin: 0 0 15px 0;
+    font-weight: lighter;
+}
+
+div#firstPage h1 {
+	color: rgba(0, 0, 0, 1);
+    font-size: 1.5em;
+    text-align: left;
+    margin: auto auto;
+}
+
+div#loginPage h1 {
+	color: rgba(255, 255, 255, 1);
+}
+
+/* One screen height dividers */
+div.onePage {
+    height: 100vh;
+    width: 100%;
+    margin: 0 0;
+    position: relative;
+}
+
+div#firstPage{
+    background: rgba(234, 234, 234, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+div#loginPage{
+    background-color: rgba(52, 179, 160, 0.7);
+}
+
+/* Header style in first page */
+div.header {
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+div.headerContent {
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+}
+
+a.logoLink {
+    line-height: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    margin: 0 0;
+    display: inline-block;
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+img#logo {
+    height: 40px;
+    line-height: 50px;
+    vertical-align: middle;
+    width: auto;
+    margin: 0 0;
+}
+
+/* Style for link to login page */
+div.goToLogin {
+    float: right;
+    height: 40px;
+    margin: 5px 0;
+    /* position: absolute; */
+    /* bottom: 15px; */
+    /* left: 50%; */
+    /* -webkit-transform: translateX(-50%); */
+    /* transform: translateX(-50%); */
+}
+
+div.goToLogin a {
+    text-align: center;
+    text-decoration: none;
+    padding: 0 0;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: right;
+    color: rgba(0, 0, 0, 1);
+    width: 100%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* div.goToLogin a:hover { */
+    /* color: rgba(50, 50, 50, 1); */
+    /* text-decoration: underline; */
+    /* font-weight: bold; */
+/* } */
+
+/* Styles for columns in first page */
+div.content {
+    width: 90%;
+    margin: 30px auto;
+}
+
+div.column {
+    width: 45%;
+    height: auto;
+    /* background-color: rgba(200, 200, 200, 1); */
+    margin: 50px auto;
+    display: inline-block;
+}
+
+div.column h3 {
+    font-weight: lighter;
+    font-size: 2em;
+    margin: 30px auto 30px auto;
+}
+
+div.column p {
+    line-height: 150%;
+}
+
+div#column2 h3 {
+    text-align: center;
+}
+
+div#column2 img {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+div#column2 {
+    float: right;
+}
+
+/* Column 2 tabs */ 
+div.tabs {
+    height: 50px;
+    overflow: hidden;
+    /* border: 1px solid black; */
+    /* border-bottom: none; */
+}
+
+div.tabs a {
+    background-color: rgba(52, 179, 160, 1);
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 25%;
+    /* border: 1px solid black; */
+    color: white;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    float: left;
+    transition: 0.3s;
+}
+
+div.tabs a:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+div.tabs a.active {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+div.tabcontents {
+    /* border: 1px solid black; */
+    /* border-top: none; */
+    background-color: rgba(255, 255, 255, 1);
+    height: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+div.tabcontents h4 {
+    text-align: left;
+    margin-left: 10px;
+}
+
+div.tab span {
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+}
+
+div.tab span a {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+div.tab span a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+div#python {
+    
+}
+
+div#html {
+    display: none;
+}
+
+div#javascript {
+    display: none;
+}
+
+div#sql {
+    display: none;
+}
+
+/* Style for link to create user page */
+div.goToSignup {
+    height: 50px;
+    width: 200px;
+    margin: 50px auto 0 auto;
+}
+
+div.goToSignup a {
+    text-align: center;
+    text-decoration: none;
+    padding: 0 0;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    background-color: rgba(80, 125, 200, 1);
+    /* border: 3px solid rgba(85, 155, 185, 1); */
+    color: rgba(255, 255, 255, 1);
+    width: 100%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+div.goToSignup a:hover {
+    /* background-color: rgba(150, 150, 150, 1); */
+    color: rgba(0, 0, 0, 1);
+}
+
+/* Container for login and signup forms */
+div.container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+/* Login and signup tabs */ 
+div.formTabs {
+    height: 50px;
+    overflow: hidden;
+}
+
+div.formTabs a {
+    background: rgba(234, 234, 234, 1);
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50%;
+    /* border: 1px solid black; */
+    color: black;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    float: left;
+    transition: 0.3s;
+}
+
+div.formTabs a:hover {
+    background-color: rgba(185, 185, 185, 1);
+}
+
+div.formTabs a.active {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Area for login and signup forms */
+div#forms {
+    height: 340px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+div.form {
+    -webkit-animation: fadeEffect 1.5s;
+    animation: fadeEffect 1.5s;
+}
+
+/* Login form style */
+form.login {
+    width: 300px;
+    background-color: rgba(255, 255, 255, 1);
+    margin: 5% auto;
+}
+
+div#loginForm {
+    min-height:200px;
+    padding:10px;
+}
+
+span.loginError {
+    color: rgba(255, 0, 0, 1);
+}
+
+/* Signup form style */
+form.signup {
+    width: 300px;
+    background-color: rgba(255, 255, 255, 1);
+    margin: 5% auto;
+}
+
+div#signupForm {
+    min-height:200px;
+    padding:10px;
+    display: none;
+}
+
+/* Styles for input boxes in forms */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 13px 5px;
+    margin: 5px 0px;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+/* Styles for password validation texts */
+input#signupEmail:before, input#signupPsw:before, input#pswConfirm:before {
+    position: relative;'
+    left: -20px;
+    content: "✔";
+}
+
+div#pswMessage {
+    display:none;
+    background: rgba(255, 255, 255, 1);
+    position: relative;
+}
+
+div#pswMessage p {
+    /* padding: 10px 35px; */
+    /* font-size: 18px; */
+}
+
+p.valid {
+    color: green;
+}
+
+p.valid:before {
+    position: relative;
+    left: -10px;
+    content: "✔";
+}
+
+p.invalid {
+    color: red;
+}
+
+p.invalid:before {
+    position: relative;
+    left: -10px;
+    content: "✖";
+}
+
+
+/* Styles for buttons in forms */
+button {
+    background: rgba(234, 234, 234, 1);
+    color: black;
+    padding: 13px 5px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: rgba(185, 185, 185, 1);
+}
+
+input.rememberMe {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  margin: 10px 0;
+  vertical-align: middle;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    text-align: center;
+    display: block;
+    margin: 10px 0;
+}
+
+a#pswResetBtn {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+a#pswResetBtn:hover {
+    text-decoration: underline;
+}
+
+/* Password reset modal style */
+
+/* The Modal (background) */
+div.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: rgba(255, 255, 255, 1);
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background: rgba(52, 179, 160, 1);
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+/* Style for link to first page */
+div.goUp {
+    text-align: center;
+    float: right;
+    height: 50px;
+    width: 15%;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)    
+}
+
+div.goUp a {
+    text-align: center;
+    text-decoration: none;
+    padding: 0 0;
+    height: 50px;
+    line-height: 50px;
+    background: rgba(234, 234, 234, 1);
+    color: black;
+    width: 100%;
+    display: inline-block; 
+    cursor: pointer;
+}
+
+div.goUp a:hover {
+    background-color: rgba(185, 185, 185, 1);
+}
+
+/* Footer style */
+div.footer {
+    background: rgba(255, 255, 255, 1);
+    border-top: 1px solid rgba(130, 130, 130, 1);
+    width: 100%;
+    margin: 0 0;
+}
+div.footer p {
+    text-align: center;
+}
+
+/* Social media login button styles */
+div.socialMediaLogin {
+    text-align: center;
+}
+
+.fbButton, .linkedinButton, .googleButton {
+    width: 30%;
+    display: initial;
+    margin: 0 0 15px 0;
+}
+
+.fbButton {
+    background-color: #3b5999;
+    color: rgba(255, 255, 255, 1);
+    float: left;
+}
+.linkedinButton {
+    background-color: #0077b5;
+    color: rgba(255, 255, 255, 1);    
+}
+.googleButton {
+    background-color: #dd4b39;
+    color: rgba(255, 255, 255, 1);    
+    float: right;
+}
+
+.lineWithLabel {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid transparent;
+    text-align: center;
+    margin: 10px 0 0 0;
+    padding: 0 0;
+}
+
+.lineWithLabel legend {
+    font-size: 1em;
+    padding: 0 10px;
+    margin: 0 0;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Change styles for login on screens between 400px and 500px */
+@media screen and (max-width: 500px) {
+    h1 {
+        text-align: center;
+        letter-spacing: 3px;
+        color: rgba(255, 255, 255, 1);
+        font-family: Verdana, Helvetica, sans-serif;
+        font-size: 2em;
+    }
+    
+    form.login, form.signup {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 1);
+        margin: 3% auto;
+        border-radius: 0px;
+    }
+    
+}
+
+/* Change styles for login on screens max 400px */
+@media screen and (max-width: 400px) {
+    h1 {
+        text-align: center;
+        letter-spacing: 3px;
+        color: rgba(0, 0, 0, 1);
+        font-family: Verdana, Helvetica, sans-serif;
+        font-size: 2em;
+    }
+
+    div.container {
+        width: 100%;
+        padding: 0 0;
+}
+    
+    form.login, form.signup {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 1);
+        margin: 3% 0;
+        border-radius: 0px;
+    }
+    
+    /* One screen height dividers */
+    div.onePage {
+        height: auto;
+        width: 100%;
+        margin: 0 0;
+        position: relative;
+    }
+    
+    /* Styles for columns in first page */
+    div.content {
+        width: 100%;
+        margin: 30px auto;
+    }
+    
+    /* Style for link to login page */
+    div.goToLogin {
+        width: 100%;
+        position: relative;
+        margin: 15px 0 0 0;
+    }
+
+    /* Style for link to login page */
+    div.goUp {
+        width: 100%;
+        position: relative;
+        margin: 15px auto;
+    }
+    
+    div.column {
+        width: 95%;
+        height: auto;
+        background-color: rgba(200, 200, 200, 1);
+        margin: 0 auto;
+        display: block;
+    }
+    
+    div#column2 {
+        float: none;
+    }
+    
+    .fbButton, .linkedinButton, .googleButton {
+        width: 100%;
+        display: initial;
+        margin: 0 0 15px 0;
+    }
+}
